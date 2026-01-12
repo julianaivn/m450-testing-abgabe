@@ -20,6 +20,7 @@ public class TestDriver {
             22300
         );
 
-        System.out.println(test_ok ? "✅ Tests OK" : "❌ Test fehlgeschlagen");
+        System.out.println(test_ok ? "Tests OK" : "Test fehlgeschlagen");
     }
 }
+
