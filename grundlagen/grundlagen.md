@@ -56,3 +56,5 @@ Patient:innen erleiden schwere gesundheitliche Schäden oder sterben.
 
 Aufgabe 3 - Bonus
 Das Programmstück ist fehlerhaft ;) Finden Sie den Fehler im Code. Was müsste man korrigieren?
+
+Die if-Reihenfolge ist falsch: Ab extras >= 3 wird sofort 10 % angewendet, sodass Fälle mit extras >= 5 nie 15 % erhalten.
