@@ -51,6 +51,8 @@ Aufgrund eines Rechenfehlers wird eine zu hohe Dosis ausgegeben.
 Patient:innen erleiden schwere gesundheitliche Schäden oder sterben.
 
 # Aufgabe 3
+[Code & Lösung](code)
+
 
 Aufgabe 3 - Bonus
 Das Programmstück ist fehlerhaft ;) Finden Sie den Fehler im Code. Was müsste man korrigieren?
