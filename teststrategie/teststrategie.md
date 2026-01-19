@@ -1,16 +1,28 @@
 # Übung 1
 
-## Eine Tabelle mit abstrakten Testfällen. Hier verwenden Sie logische Operatoren wie > , < , etc.
+## Eine Tabelle mit abstrakten Testfällen.
 
-| Bedingung                            | Erwarteter Rabatt |
-| ------------------------------------ | ----------------- |
-| Kaufpreis < 15’000 CHF               | 0 %               |
-| 15’000 CHF ≤ Kaufpreis ≤ 20’000 CHF  | 5 %               |
-| 20’000 CHF < Kaufpreis < 25’000 CHF  | 7 %               |
-| Kaufpreis ≥ 25’000 CHF               | 8,5 %             |
+| Nr. | Bedingung                            | Erwarteter Rabatt |
+| --- | ------------------------------------ | ----------------- |
+| A1  | Kaufpreis < 15’000 CHF               | 0 %               |
+| A2  | 15’000 CHF ≤ Kaufpreis ≤ 20’000 CHF  | 5 %               |
+| A3  | 20’000 CHF < Kaufpreis < 25’000 CHF  | 7 %               |
+| A4  | Kaufpreis ≥ 25’000 CHF               | 8,5 %             |
 
 
-## Eine Tabelle mit konkreten Testfällen. Hier verwenden Sie ganz konkrete Eingabe-Werte, um die Testfälle zu erstellen.
+## Eine Tabelle mit konkreten Testfällen. 
+
+| Nr. | Kaufpreis       | Erwarteter Rabatt |
+| --- | --------------- | ----------------- |
+| K1  | 14’999          | 0 %               |
+| K2  | 15’000          | 5 %               |
+| K3  | 18’500          | 5 %               |
+| K4  | 20’000          | 5 %               |
+| K5  | 20’001          | 7 %               |
+| K6  | 24’999          | 7 %               |
+| K7  | 25’000          | 8,5 %             |
+| K8  | 30’000          | 8,5 %             |
+
 
 
 
