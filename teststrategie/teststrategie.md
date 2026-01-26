@@ -27,13 +27,15 @@
 
 
 # Übung 2
-Suchen Sie sich eine Webseite zum Thema Autovermietung.
+Website: [rentalcars](https://www.rentalcars.com/de/) 
 
-## Definieren Sie funktionale Black-Box Tests, die Sie brauchen, um diese Plattform zu betreiben. 
-
-## Listen Sie die 5 wichtigsten Testfälle auf
-
-## Erstellen Sie eine Tabelle mit diesen Testfälle als Markdown
+| ID | Beschreibung | Erwartetes Resultat | Effektives Resultat | Status | Mögliche Ursache |
+|----|--------------|--------------------|--------------------|--------|------------------|
+| 1  | Benutzer gibt einen Standort ein und startet die Fahrzeugsuche | Verfügbare Fahrzeuge werden in einer Liste angezeigt | – | – | – |
+| 2  | Benutzer wählt Abhol- und Rückgabedatum aus | Nur für den gewählten Zeitraum verfügbare Fahrzeuge werden angezeigt | – | – | – |
+| 3  | Benutzer öffnet die Detailansicht eines Fahrzeugs | Fahrzeugdetails wie Preis, Modell und Mietbedingungen werden korrekt angezeigt | – | – | – |
+| 4  | Benutzer startet den Buchungsvorgang für ein Fahrzeug | Das Buchungsformular wird fehlerfrei geöffnet | – | – | – |
+| 5  | Benutzer wählt zusätzliche Fahrer aus | Bei zusätzlichen Fahrern wird ein Zuschlag berechnet, sonst nicht | – | – | – |
 
 
 # Übung 3
