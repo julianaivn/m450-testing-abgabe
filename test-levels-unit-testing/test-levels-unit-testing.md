@@ -15,6 +15,8 @@
 | **@DisplayName**                 | Gibt einem Test einen verständlichen Namen                          | `@DisplayName("Addition mit positiven Zahlen")`                    |
 | **@ParameterizedTest**           | Führt denselben Test mit mehreren Eingabewerten aus                 | `@ValueSource(ints = {1, 2, 5})`                                   |
 
+Referenz Seite: https://docs.junit.org/6.0.2/overview.html
+
 # Aufgabe 3
 
 ### Zentrale Klassen der Anwendung
