@@ -39,12 +39,27 @@ Website: [rentalcars](https://www.rentalcars.com/de/)
 
 
 # Übung 3
-Die Applikation läuft bei Ihnen und Sie können diese testen.
 
-## Identifizieren Sie mögliche Black-Box Testfälle, welche Sie als Benutzer testen können.
+Mögliche Black-Box-Testfälle
+| Test | Testfall | Erwartetes Resultat | Effektives Resultat |
+|-----:|----------|---------------------|---------------------|
+| 1 | Eingabe eines Buchstabens, der nicht im Menü vorhanden ist | Fehlermeldung mit Hinweis zur gültigen Eingabe | Fehlermeldung |
+| 2 | Eingabe einer nicht unterstützten Währung | Fehlermeldung wird angezeigt | Fehlermeldung |
+| 3 | Eingabe einer Zahl im Nachnamen bei der Kontoerstellung | Fehlermeldung wegen ungültiger Eingabe | Zahl wird gespeichert, keine Fehlermeldung |
+| 4 | Eingabe einer bestehenden Kontonummer | Konto wird geladen und Optionen werden angezeigt | Konto wird korrekt angezeigt |
+| 5 | Abheben eines Betrags, der höher ist als der Kontostand | Abbruch der Aktion mit Fehlermeldung | Fehlermeldung |
+| 6 | Eingabe von „Ü“ für eine Überweisung auf ein anderes Konto | Auswahl des Zielkontos wird angezeigt | Fehlermeldung |
 
-## Welche Methoden im Code könnten für White-Box Testfälle verwendet werden?
+Mögliche White-Box-Testfälle
+| Test | Methode | Was wird getestet? | Erwartetes Resultat |
+|-----:|---------|-------------------|---------------------|
+| 1 | `Account.deposit(double amount)` | Einzahlung eines Betrags auf ein Konto | Kontostand erhöht sich um den eingezahlten Betrag |
+| 2 | `Account.withdraw(double amount)` | Abhebung bei ausreichendem bzw. unzureichendem Guthaben | Bei genug Geld: true und Kontostand sinkt, sonst: false und Kontostand bleibt gleich |
+| 3 | `Bank.getAccount(int nr)` | Suche eines Kontos anhand der Kontonummer | Existierendes Konto wird zurückgegeben, sonst `null` |
+| 4 | `Bank.createAccount(String, Currency, double)` | Erstellen eines neuen Kontos | Konto wird erstellt und der Kontoliste hinzugefügt |
+| 5 | `Counter.convertCurrency(...)` | Umrechnung eines Betrags in eine andere Währung | Betrag wird korrekt umgerechnet, sonst unverändert zurückgegeben |
 
-## Was würden Sie am Code generell verbessern, welche Best Practices fallen Ihnen ein?
+Verbesserungsvorschläge und Best Practices
 
-## Listen Sie Ihre Testfälle tabellarisch auf in einem Markdown-Dokument und stellen Sie Ihre Lösung in Ihr Repository.
+- Fehlermeldungen hinzufügen
+- Eingaben richtig validieren
